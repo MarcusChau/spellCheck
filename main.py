@@ -1,6 +1,9 @@
-import re
-print("\033[4mhello\033[0m")
+print("\033[4mhello\033[0m") # Underlined word
+
+
 closeDictionary = {}
+
+# main control that calls all the other functions
 def fixer(word,dictionary):
     if word.lower() in dictionary:
         return word.lower()
@@ -22,6 +25,8 @@ def fixer(word,dictionary):
         return closeWord
     return word
 
+
+# function to remove a letter to check to see if that fixes the spelling error
 def remover(word, dictionary):
     listOfLetters = []
     for letter in word:
@@ -39,6 +44,8 @@ def remover(word, dictionary):
         i += 1
     return word
 
+
+# function that checks the words around to see if that fixes the problem
 def closeToFixer(word, dictionary):
     accm = 0
     while len(word) > accm:
@@ -50,6 +57,8 @@ def closeToFixer(word, dictionary):
         accm += 1
     return word
 
+
+# Adds a letter to check to see if it fixes the spelling issue
 def adder(word, dictionary):
     adderacc = 0
     while len(word) + 1 > adderacc:
@@ -61,6 +70,7 @@ def adder(word, dictionary):
     return word
 
 
+# main method 
 def main():
     lFile = open("keyboard-letters.txt")
     dfile = open("american-english.txt")
@@ -88,4 +98,6 @@ def main():
         end += " "
     print(end)
 
+
+# calling main
 main()
