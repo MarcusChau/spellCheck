@@ -16,7 +16,7 @@ Before you begin, ensure you have the following:
 
 ## Development Expansion ##
 
-This application can be expaneded to be even more accurate, check grammatical errors, and or even be applied to different languages. It can also incorperate machine learning in order to more efficently check. My approach of this would be to seperate the this into multiple py files and have each one check for a specific error and then also have a main to be able to control all of them locally. This can use machine learning by using PyTorch or Scikit-learn.  
+This application can be expanded to be even more accurate, check grammatical errors, and or even be applied to different languages. It can also incorperate machine learning in order to more efficently check. My approach of this would be to seperate the this into multiple py files and have each one check for a specific error and then also have a main to be able to control all of them locally. This can use machine learning by using PyTorch or Scikit-learn.  
 
 ## Technology Stack ##
 
